@@ -8,29 +8,81 @@ body {
     grid-template-rows: auto auto 1fr auto;
 }
   
-header {
-    background: rgb(170, 111, 62);
-    padding: 2rem;
+.header {
+    background: rgb(214, 186, 149);
+    padding: 1rem;
     grid-column: 1 / 3;
-   
+    text-align: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+	border-radius: 0 0 85% 85% / 30%;
 }
+.header a {
+    left: 0;
+    top: 0;
+    width: 40%;
+    float: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 100px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px; 
+  }
+
+.header-right {
+    left: 0;
+    top: 0;
+    width: 30%;
+    float: center;
+
+  }
+
+.header a.logo {
+    text-align: center;
+    float: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 100px;
+  }
+
 h1{
-
-    text-align: right;
-
+    text-align: center;
 }
   
 nav {
     grid-column: 1 / 3;
-    background-color: rgb(245, 225, 198);
+    background-color: rgb(168, 138, 98);
     padding: 1rem;
     text-align: right;
 }
-  
+
+nav ul {
+	list-style-type: none;
+}
+
+nav a {
+	display: block;
+	color: #000000;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	border: 1px solid #070000;
+}
+
 main {
-    background: rgb(250, 250, 249);
+    background: rgb(255, 255, 255);
     height: 100%;
     padding: 1rem;
+    text-decoration: underline;
+    text-align: center;
 }
   
 aside {
@@ -40,8 +92,8 @@ aside {
 }
   
 footer {
-    background: wheat;
-    padding: 2rem;
+    background: rgb(214, 186, 149);
+    padding: 1rem;
     text-align: center;
     grid-column: 1 / 3;
 }
@@ -52,7 +104,7 @@ footer {
     transition: 0.3s;
     padding: 16px;
     text-align: left;
-    background-color: #f1f1f1;
+    background-color: #d1a692;
   }
   
   /* On mouse-over, add a deeper shadow */
@@ -86,4 +138,24 @@ footer {
       display: block;
       margin-bottom: 20px;
     }
+}
+
+@media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+}
+
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
 }
