@@ -90,7 +90,10 @@ main {
    */
 
 h3 {
-    text-align: left;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: bold;
 }
 footer {
     background: rgb(214, 186, 149);
