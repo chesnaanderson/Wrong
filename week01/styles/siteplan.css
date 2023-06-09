@@ -18,7 +18,7 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-border-radius: 0 0 85% 85% / 30%;
+  border-radius: 0 0 85% 85% / 30%;
 }
 .header a {
   left: 0;
@@ -115,7 +115,7 @@ footer {
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 12px 20px 0 rgba(3, 3, 3, 0.2);
 }
 
 /* Add some padding inside the card container */
